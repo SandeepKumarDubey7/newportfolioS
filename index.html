@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Sandeep Kumar Dubey - Frontend & Full-Stack Developer</title>
+    <meta name="description" content="B.Tech (CSE, AI/ML) • Frontend & Full-Stack Developer. I build responsive websites, interactive visualizations and developer tools." />
+    <meta name="keywords" content="Sandeep Kumar Dubey, Frontend Developer, Full-Stack Developer, React, JavaScript, Python, AI/ML, Web Development" />
+    <meta name="author" content="Sandeep Kumar Dubey" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sandeep Kumar Dubey - Frontend & Full-Stack Developer" />
+    <meta property="og:description" content="B.Tech (CSE, AI/ML) • Frontend & Full-Stack Developer. I build responsive websites, interactive visualizations and developer tools." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sandeepkumardubey.dev" />
+    <meta property="og:image" content="/og-image.jpg" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sandeep Kumar Dubey - Frontend & Full-Stack Developer" />
+    <meta name="twitter:description" content="B.Tech (CSE, AI/ML) • Frontend & Full-Stack Developer. I build responsive websites, interactive visualizations and developer tools." />
+    <meta name="twitter:image" content="/og-image.jpg" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sandeep Kumar Dubey",
+      "jobTitle": "Frontend & Full-Stack Developer",
+      "description": "B.Tech (CSE, AI/ML) • Frontend & Full-Stack Developer",
+      "url": "https://sandeepkumardubey.dev",
+      "email": "sandeepdk180@gmail.com",
+      "telephone": "+91 8595547675",
+      "sameAs": [
+        "https://www.linkedin.com/in/sandeep-dubey-a6a9b5289",
+        "https://github.com/SandeepKumarDubey7"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Computer Science Engineering with AI/ML"
+      },
+      "knowsAbout": ["JavaScript", "React", "Python", "AI/ML", "Web Development", "Frontend Development", "Full-Stack Development"]
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <style>
+      /* Loading screen styles */
+      #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.3s ease-out;
+      }
+      
+      .loading-content {
+        text-align: center;
+        color: #f8fafc;
+      }
+      
+      .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid #334155;
+        border-top: 3px solid #3b82f6;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 1rem;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      /* Prevent flash of unstyled content */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', system-ui, sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      
+      /* Fast loading optimization */
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <p>Loading Portfolio...</p>
+      </div>
+    </div>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <script>
+      // Remove loading screen when page is loaded
+      window.addEventListener('DOMContentLoaded', () => {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+          setTimeout(() => {
+            loadingScreen.style.opacity = '0';
+            setTimeout(() => {
+              loadingScreen.remove();
+            }, 300);
+          }, 500);
+        }
+      });
+    </script>
+  </body>
+</html>
