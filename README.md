@@ -185,4 +185,4 @@ npm run build
 
 ---
 
-**Built with ❤️ using React, Three.js, Framer Motion, and Tailwind CSS**
+**Built with React, Three.js,and Tailwind CSS**
