@@ -238,19 +238,7 @@ const ContactSection = () => {
               </motion.div>
 
               {/* Quick Stats */}
-              <motion.div variants={itemVariants} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-blue-500/20">
-                <h4 className="text-lg font-semibold text-white mb-4">Quick Response</h4>
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div>
-                    <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">&lt; 24h</div>
-                    <p className="text-gray-400 text-sm">Response Time</p>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">100%</div>
-                    <p className="text-gray-400 text-sm">Client Satisfaction</p>
-                  </div>
-                </div>
-              </motion.div>
+              
             </motion.div>
 
             {/* Contact Form */}

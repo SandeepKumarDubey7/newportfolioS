@@ -2,7 +2,7 @@ import React, { Suspense, useRef, useMemo } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Points, PointMaterial, Sphere } from '@react-three/drei'
 import { motion } from 'framer-motion'
-import { ChevronDown, Download, Mail, Github, Linkedin, MapPin } from 'lucide-react'
+import { ChevronDown, Download, Mail, Github, Linkedin, MapPin, PhoneCallIcon } from 'lucide-react'
 import * as random from 'maath/random/dist/maath-random.esm'
 
 // 3D Particle System
@@ -183,7 +183,7 @@ const AnimatedHero = () => {
                                     transition={{ duration: 0.6, delay: 0.5 }}
                                     className="block text-white"
                                 >
-                                    Sandeep Kumar
+                                 
                                 </motion.span>
                                 <motion.span
                                     initial={{ opacity: 0, y: 20 }}
@@ -191,7 +191,7 @@ const AnimatedHero = () => {
                                     transition={{ duration: 0.6, delay: 0.7 }}
                                     className="block bg-gradient-to-r from-blue-400 via-purple-500 to-blue-400 bg-clip-text text-transparent"
                                 >
-                                    Dubey
+                                 Sandeep Kumar Dubey
                                 </motion.span>
                             </h1>
                         </motion.div>
@@ -210,7 +210,7 @@ const AnimatedHero = () => {
                                 }}
                                 transition={{ duration: 3, repeat: Infinity }}
                             >
-                                B.Tech in Computer Science | Full Stack Developer | Java Enthusiast
+                                B.Tech in Computer Science & Engineering With Specialization in AI & ML 
                             </motion.h2>
                             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
                                 Passionate about creating innovative web solutions and exploring the endless possibilities
@@ -238,7 +238,7 @@ const AnimatedHero = () => {
                                 className="flex items-center space-x-2 hover:text-blue-400 transition-colors duration-300"
                                 whileHover={{ scale: 1.05 }}
                             >
-                                <MapPin size={16} />
+                                <PhoneCallIcon size={16} />
                                 <span>+91 8595547675</span>
                             </motion.a>
                         </motion.div>
