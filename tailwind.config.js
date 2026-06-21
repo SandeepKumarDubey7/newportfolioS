@@ -31,6 +31,14 @@ export default {
           700: '#334155',
           800: '#1e293b',
           900: '#0f172a',
+          950: '#020617',
+        },
+        accent: {
+          cyan: '#22d3ee',
+          violet: '#8b5cf6',
+          pink: '#ec4899',
+          amber: '#f59e0b',
+          emerald: '#10b981',
         }
       },
       animation: {
@@ -38,6 +46,12 @@ export default {
         'glow': 'glow 2s ease-in-out infinite alternate',
         'slide-up': 'slideUp 0.5s ease-out',
         'fade-in': 'fadeIn 0.6s ease-out',
+        'aurora': 'aurora 15s ease infinite',
+        'shimmer': 'shimmer 2s linear infinite',
+        'float-gentle': 'float-gentle 6s ease-in-out infinite',
+        'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+        'border-glow': 'borderGlow 3s ease-in-out infinite',
+        'gradient-x': 'gradient-x 4s ease infinite',
       },
       keyframes: {
         float: {
@@ -59,7 +73,12 @@ export default {
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'heading': ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
         'mono': ['JetBrains Mono', 'monospace'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },

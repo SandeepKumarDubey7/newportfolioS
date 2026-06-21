@@ -17,31 +17,26 @@ const CustomCursor = lazy(() => import('./components/CustomCursor'))
 
 // Loading screen component
 const LoadingScreen = () => (
-  <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 flex items-center justify-center z-50">
-    <div className="text-center">
+  <div className="fixed inset-0 bg-[#040912] flex items-center justify-center z-50">
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-violet-600/[0.05] rounded-full blur-[120px]" />
+    <div className="text-center relative z-10">
       <motion.div
-        animate={{ 
-          rotate: 360,
-          scale: [1, 1.2, 1]
-        }}
-        transition={{ 
-          rotate: { duration: 2, repeat: Infinity, ease: "linear" },
-          scale: { duration: 1, repeat: Infinity, ease: "easeInOut" }
-        }}
-        className="w-16 h-16 border-4 border-blue-500/30 border-t-blue-500 rounded-full mx-auto mb-4"
+        animate={{ rotate: 360 }}
+        transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
+        className="w-12 h-12 border-2 border-white/[0.06] border-t-violet-500 rounded-full mx-auto mb-6"
       />
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-2xl font-bold text-white mb-2"
+        className="text-xl font-heading font-bold text-white mb-2"
       >
         Sandeep Kumar Dubey
       </motion.h2>
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="text-blue-300"
+        transition={{ delay: 0.3 }}
+        className="text-gray-500 text-sm"
       >
         Loading Portfolio...
       </motion.p>
@@ -51,11 +46,11 @@ const LoadingScreen = () => (
 
 // Section loader for lazy components
 const SectionLoader = ({ height = "min-h-screen" }) => (
-  <div className={`${height} bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center`}>
+  <div className={`${height} bg-[#040912] flex items-center justify-center`}>
     <motion.div
       animate={{ rotate: 360 }}
       transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-      className="w-8 h-8 border-2 border-blue-500/30 border-t-blue-500 rounded-full"
+      className="w-6 h-6 border-2 border-white/[0.06] border-t-violet-500 rounded-full"
     />
   </div>
 )
